@@ -8,7 +8,9 @@ int main(void) {
   scanf("%f",&l1);
   printf("Enter L2\n");
   scanf("%f",&l2);
-  
+  printf("Enter Height\n");
+  scanf("%f",&Height);
+
   // หา40เปอร์เซ็น ของค่า l1 l2
   perl1= (40*l1)/100;
   perl2= (40*l2)/100;
@@ -16,15 +18,13 @@ int main(void) {
  if(l2>l1){
     per=(l1/l2)*100;
     printf("L2 > L1= %d % \n",per);
-    Suml= l1+l2;
   
     if (perl2>perl1){
-      printf("Enter Height\n");
-      scanf("%f",&Height);
+
+      Suml= l1+l2;
       area = 0.5*Height*Suml;
       printf("Area is : %0.3f \n", area);
     }
-    
      }
     else 
     printf("Stop calculating because l2<L1 \n");
